@@ -1,4 +1,7 @@
 <body ng-controller="HomeController">
-  <h2>This is the blank home-view.html file</h2>
-  {{home.testMessage}}
+  <h2>Reach Out and Touch Someone</h2>
+  <label>Enter phone number: <input type="text" ng-model="home.smsObject.number" /><label>Enter message: <input type="text" ng-model="home.smsObject.message" /><button ng-click=home.sendSms(home.smsObject)>Send Text</button><button ng-click="home.makeCall(number)">Make Call</button></label>
+
+  <p>home.smsObject is: {{home.smsObject}}</p>
+
 </body>
